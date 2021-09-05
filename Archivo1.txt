@@ -1,4 +1,3 @@
 EL archivo
 contiene datos Modificados de 
 rama master
-y modificado en rama1
