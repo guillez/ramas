@@ -1,0 +1,348 @@
+
+/* PANELS */
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+
+  border-width: 2px;
+  border-bottom: none;
+}
+
+.paneles{
+  font-size: 14px;
+}
+
+.paneles .numero-paso {
+  text-align: center;
+}
+.paneles .numero-paso h1 {
+  line-height: 41px;
+  color: #e54e4e;
+}
+
+.paneles .numero-paso {
+  text-align: center;
+}
+
+.paneles .numero-paso1-gestor {
+  text-align: center;
+}
+
+.paneles .numero-paso1-gestor h1 {
+  line-height: 41px;
+  color: #cc0000;
+}
+
+.paneles .numero-paso1-gestor {
+  text-align: center;
+}
+
+.paneles .numero-paso2-gestor {
+  text-align: center;
+}
+
+.paneles .numero-paso2-gestor h1 {
+  line-height: 41px;
+  color: #bc5fd3;
+}
+
+.paneles .numero-paso2-gestor {
+  text-align: center;
+}
+
+.paneles .numero-paso3-gestor {
+  text-align: center;
+}
+
+.paneles .numero-paso3-gestor h1 {
+  line-height: 41px;
+  color: #67a911;
+}
+
+.paneles .numero-paso3-gestor {
+  text-align: center;
+}
+
+.paneles .numero-paso4-gestor {
+  text-align: center;
+}
+
+.paneles .numero-paso4-gestor h1 {
+  line-height: 41px;
+  color: #159cd6;
+}
+
+.paneles .numero-paso4-gestor {
+  text-align: center;
+}
+
+.icono-panel{
+  padding: 25%
+}
+
+.paneles{
+  font-size: 14px;
+}
+
+.step > a{
+	color:black;
+}
+.step > a:HOVER{
+	color:#cc0000;
+}
+
+/* INDEX */
+.panel1_admin {
+  background-color: #e5e5e5;
+}
+.panel2_admin {
+  background-color: #e5e5e5;
+}
+.panel3_admin {
+  background-color: #e5e5e5;
+}
+.panel4_admin {
+  background-color: #e5e5e5;
+}
+
+.panel1_gestor {
+  background-color: #e5e5e5;
+}
+.panel2_gestor {
+  background-color: #e5e5e5;
+}
+.panel3_gestor {
+  background-color: #e5e5e5;
+}
+.panel4_gestor {
+  background-color: #e5e5e5;
+}
+
+.padding-encabezado1 {
+    padding-top: 4px;
+    padding-bottom: 0px;
+}
+
+.padding-encabezado2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* ALERT MESSAGE dentro de un PANEL */
+/* Agregado para el ticket #17301 */
+.tab-content > .alert {
+  margin-top: 0px !important;
+}
+
+/* Tamaños de columnas */
+/* Agregado para el ticket #18007 */
+.ancho-minimo-columna-cuadro-75 {
+  min-width: 75px;
+}
+
+.ancho-minimo-columna-cuadro-85 {
+  min-width: 85px;
+}
+
+.ancho-minimo-columna-cuadro-90 {
+  min-width: 90px;
+}
+
+.ancho-minimo-columna-cuadro-105 {
+  min-width: 105px;
+}
+
+.ancho-maximo-alert-cuadro-400 {
+  max-width: 400px;
+}
+
+.mensaje-scroll-cuadro {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-color: #bce8f1;
+}
+
+.hamburguesa-xs {
+  padding-left: 0px;
+}
+
+.logo-xs {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.logo-xs2 {
+  max-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+.span-texto-header {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width:768px) and (max-width:857px) {
+  .span-texto-header-fix {
+    max-width: 145px;
+    max-height: 16px;
+    padding-left: 3px;
+    padding-right: 0px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width:858px) and (max-width:991px) {
+  .span-texto-header-fix {
+    max-width: 205px;
+    max-height: 16px;
+    padding-left: 3px;
+    padding-right: 0px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .menu-ayuda-fix {
+    max-width: 200px;
+    background-color: #fff !important;
+  }
+}
+
+/* #18048 */
+.fix-btn-login {
+  margin-bottom: 5px;
+}
+
+/* #18147 Floating Button */
+.red-floating-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #cc0000;
+  border-color: #cc0000;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 18px !important;
+}
+
+.red-floating-button:hover {
+  color: #FFFFFF;
+}
+
+.red-floating-button:focus {
+  color: #FFFFFF;
+}
+
+.glyphicon-fix {
+  top: 2px;
+  left: 1px;
+}
+
+.google-icon {
+  height: 34px;
+  margin-left: -6px;
+}
+
+.no-divider {
+  text-align: right;
+  position: sticky;
+  bottom: 30px;
+  width: 80px;
+  float: right;
+}
+
+.shadow-button {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.35), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* #18149 Revisión de botón de Ordenamiento */
+.ordenamiento-estilo-general {
+  padding: 6px;
+}
+
+/* #18192 Archivar habilitaciones */
+.icono-grisado {
+  color: #97a0b3 !important;
+}
+
+/* #18193 Destacar habilitaciones */
+.icono-destacado {
+  color: #f4c84a !important;
+  font-size: 16px;
+}
+
+.icono-grisado-destacado {
+  color: #97a0b3 !important;
+  font-size: 16px;
+}
+
+.fix-table-habilitaciones > tbody > tr > td {
+  vertical-align: middle;
+}
+
+/* Fix para que no se vea la línea de la habmburgesa cdo esta activa, hover o con foco. */
+.fix-burger, .fix-burger:hover, .fix-burger:active, .fix-burger:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* Fix para el componente ef-upload */
+.fix-upload {
+  padding: 0 !important;
+}
+
+/* Fix para ARAI app launcher */
+.arai-applauncher {
+  float: left;
+  color: #000;
+  padding: 6px 8px !important;
+  line-height: 20px;
+  position: relative;
+  display: block;
+  margin-right: 0px;
+  font-weight: normal !important;
+}
+
+.arai-applauncher:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.arai-fix-div {
+  display: inline;
+}
+
+/* Regla para la imagen de perfil en el menu, ya que ahora es parte de un vinculo */
+.menu_imagen_perfil_usuario {
+  /*width: 100%;
+  max-width: 45px;
+  height: 45px;*/
+  /*object-fit: none; /* Do not scale the image */
+  object-fit: cover;
+  object-position: center; /* Center the image within the element */
+  height: 45px;
+  width: 45px;
+}
+
+/* Reglas para la imagen de perfil en la operación*/
+.operacion_imagen_perfil_usuario {
+  /*width: 100%;
+  max-width: 135px;
+  height: 135px;*/
+  /*object-fit: none; /* Do not scale the image */
+  object-fit: cover;
+  object-position: center; /* Center the image within the element */
+  height: 135px;
+  width: 135px;
+}
+
+.margen-imagen-perfil {
+  margin-bottom: 10px;
+}

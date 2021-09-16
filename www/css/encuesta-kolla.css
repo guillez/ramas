@@ -1,0 +1,242 @@
+/* -- Encabezado internos -- */
+
+header{
+	font-size: 12px;
+	border-bottom: solid 1px #D71921;
+	padding-bottom: 5px;
+	
+}
+
+header .kolla_cab_titulo {
+	color:#D71921;
+}
+
+.cabecera {
+	padding-bottom: 3px;
+	border-bottom: #E7A9B1 1px solid;
+	font: normal normal normal 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.kolla_logo {
+	padding: 3px 0px 0px 2px;
+}
+
+/* -- Bootstrap fixes -- */
+
+.container {
+	width: 680px;
+	/*width: 840px;*/
+}
+
+.container-fluid {
+	max-width: 770px;
+	/*min-width: 430px;*/
+	/*width: 840px;*/
+	padding: 10px;
+	margin: auto;
+}
+
+.container-fluid.formulario-con-tabs {
+	max-width: 920px;
+	/*min-width: 650px;*/
+}
+
+
+
+.form-horizontal .form-actions {
+	text-align:right;
+}
+
+/* -- Generales -- */
+
+.cuerpo-formulario {}
+
+.encuesta {
+	margin-bottom: 20px;
+}
+
+.encuesta legend {
+	color: #0088cc;
+	border-color: #0088cc;
+	margin-bottom: 0px;
+	text-align: center;
+
+}
+.encuesta .panel-heading{
+    border-color: #0088cc;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.encuesta-bloque {
+    margin-left: 10px;
+}
+
+.encuesta-titulo {
+	background-color: #0088CC;
+	color: #fff;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 15px;
+}
+
+/* -- Elementos de una encuesta -- */
+
+.encuesta-elemento {
+	text-align: center;
+}
+.encuesta-elemento .encuesta-titulo {}
+.encuesta-elemento .elemento-foto {
+    max-width: 20%;
+    max-height: 150px;
+    margin-right: 10px;
+}
+.encuesta-elemento .elemento-descripcion-foto {
+    max-width: 75%;
+}
+.encuesta-elemento .encuesta-descripcion {}
+
+.formulario-titulo {
+    color: #8d8d8d;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.alert-error-kolla {
+	margin-bottom: 0;
+	padding: 0 4px;
+	font-size: 12px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	color: #b94a48;
+	background-color: #f2dede;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+#formulario {
+    padding: 3px 0 10px  0px;
+}
+
+.ei-form-etiq-kolla { /*Cada una de las preguntas*/
+	font-size: 1.1em ;
+}
+
+.encuesta-preg-etiq { /*Las preguntas de tipo etiquetas, determinan secciones*/
+	font-size: 1.15em;
+	font-style:italic;
+	font-weight:bold;
+	margin-left:4px;
+	margin-right:4px;
+	padding-top: 10px;
+}
+
+.text-center {
+    text-align: center;
+    display: block;
+}
+
+.disclaimer_form {
+	font-size: small;
+	font-family:serif;
+	margin: 5px 10px 0 10px;
+}
+
+.disclaimer_encuesta {
+        font-size: small;
+        margin: 0px 0px 3px 0px;
+        background-color: #ECF0F3;
+        clear: both;
+}
+
+label > span.glyphicon{
+	color: #cc0000;
+	
+}
+
+.nav-tabs-custom > .nav-tabs > li {
+	background-color: white;
+	margin-right: 2px !important;
+	border-radius: 4px 0px 0px 4px;
+	font-size: 13px;
+        text-align: left;
+}
+.nav-tabs-custom > .nav-tabs.nav-stacked > li > a, .nav-tabs-custom > .nav-tabs.nav-stacked > li.active > a:hover{
+	border: 0px ;
+	padding: 8px 7px !important;
+}
+.nav-tabs-custom > .nav-tabs.nav-stacked > li {
+    background-color: white;
+    border-radius: 3px 0 0px 3px !important;
+    border-top: 0px;
+    border: 1px solid #ccc !important;
+    border-left: 3px solid transparent;
+    margin-bottom: 0px;
+}
+
+.nav-tabs-custom {
+    margin-top: 1%;
+}
+.nav-tabs-custom > .nav-tabs.nav-stacked > li.active {
+    border-left-color: #0088CC !important;
+    border-left-width: 3px !important;
+}
+
+div .panel.col-md-12 {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.navbar-default {
+	background-color: #d9edf7 !important;
+	border-color: #bce8f1 !important;
+}
+
+.header-sin-padding {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+
+.cancel {
+	background-color: #d6d6d6;
+}
+
+.cancel:hover {
+	background-color: #d6d6d6;
+}
+
+.header-word-wrap {
+	word-wrap: break-word;
+}
+
+/* #18XXX Cambiar ícono de colapsado de encuesta */
+.disable-collapsing {
+	-webkit-transition: none !important;
+	transition: none !important;
+	display: none;
+}
+
+/* #18316 Etiquetas Título, Sub-Título y Texto Enriquecido */
+.etiqueta-titulo {
+	text-align: center;
+	font-weight: normal;
+	margin-top: 30px;
+}
+
+.etiqueta-subtitulo {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.etiqueta-texto-enriquecido {
+	padding: 0 8px 8px 8px;
+}
+
+.etiqueta-titulo-color {
+	color: #0088cc;
+}
+
+.etiqueta-subtitulo-color {
+	color: #0088cc;
+}

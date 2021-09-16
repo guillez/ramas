@@ -1,0 +1,3 @@
+INSERT INTO sge_reporte_tipo(reporte_tipo, nombre, descripcion) VALUES (10,	'Resultados por encuestado', 'Resultados visualizados por encuestado que respondió');
+INSERT INTO sge_reporte_tipo(reporte_tipo, nombre, descripcion) VALUES (11,	'Resultados por pregunta', 'Resultados visualizados por pregunta respondida');
+INSERT INTO sge_reporte_tipo(reporte_tipo, nombre, descripcion) VALUES (12,	'Resultados con conteo de respuestas', 'Resultados visualizados por pregunta respondida con conteo de número de veces que se eligió cada respuesta.');

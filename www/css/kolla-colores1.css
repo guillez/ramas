@@ -1,0 +1,57 @@
+/* Eliminado por ticket #17929 */
+/*.encuesta{
+	border-color: #EF8D36;
+}*/
+
+a {
+	color: #ffc18b;
+}
+
+.btn-primary {
+	background-color: #EF8D36 !important;
+	border-color: #EF8D36 !important;
+}
+
+.encuesta-titulo {
+	background-color: #EF8D36 !important;
+	border-color: #EF8D36 !important;
+}
+.panel-heading.bloque{
+	background-color: #FFC28B !important;
+	border-color: #FFC28B !important;
+	color: black;
+}
+div[id^="b_"] {
+	border-color: #FFC28B !important;
+}
+.encuesta legend {
+	color: #EF8D36;
+	border-color: #EF8D36;
+}
+.nav-tabs-custom > .nav-tabs.nav-stacked > li.active {
+    border-left-color: #EF8D36 !important;
+
+}
+
+.nav-tabs {
+  border-bottom: 1px #ddd;
+}
+
+.navbar-default {
+	background-color: #FFC28B !important;
+	border-color: #FFC28B !important;
+}
+
+/* #18316 Etiquetas Título, Sub-Título y Texto Enriquecido */
+.etiqueta-titulo-color {
+	color: #EF8D36;
+}
+
+.etiqueta-subtitulo-color {
+	color: #EF8D36;
+}
+
+/* Esta prueba es por si nos interesa que aparezca dentro de un recuadro del color del estilo elegido */
+/* .etiqueta-texto-enriquecido-color {
+	border: 1px solid #EF8D36;
+}*/

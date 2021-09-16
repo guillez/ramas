@@ -1,0 +1,2 @@
+-- Se asocia la tabla externa mdp_identidad_genero a la unidad de gestión predeterminada
+INSERT INTO sge_tabla_externa(tabla_externa, unidad_gestion, tabla_externa_nombre) VALUES (1, 0, 'mdp_identidad_genero');

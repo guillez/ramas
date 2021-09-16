@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<phpunit 
+			bootstrap="bootstrap_test.php" 
+			verbose="false" 
+			colors="true"
+			stopOnError="true"
+			stopOnFailure="false"
+>
+	<testsuites>
+		<testsuite name="api">
+			<directory>./rest/tipo_elemento</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

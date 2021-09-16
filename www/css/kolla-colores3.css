@@ -1,0 +1,55 @@
+/* Eliminado por ticket #17929 */
+/*.encuesta{
+	border-color: #BB0000 !important;
+}*/
+
+a {
+	color: #BB0000;
+}
+
+.btn-primary {
+	background-color: #BB0000 !important;
+	border-color: #BB0000 !important;
+}
+
+.encuesta-titulo {
+	background-color: #BB0000 !important;
+	border-color: #BB0000 !important;
+	
+}
+.panel-heading.bloque{
+	background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+    
+}
+div[id^="b_"] {
+	border-color: #ebccd1 !important;
+}
+
+.encuesta legend {
+	color: #BB0000;
+	border-color: #BB0000;
+}
+.nav-tabs-custom > .nav-tabs.nav-stacked > li.active {
+    border-left-color: #BB0000 !important;
+
+}
+
+.nav-tabs {
+  border-bottom: 1px #ddd;
+}
+
+.navbar-default {
+	background-color: #f2dede !important;
+	border-color: #ebccd1 !important;
+}
+
+/* #18316 Etiquetas Título, Sub-Título y Texto Enriquecido */
+.etiqueta-titulo-color {
+	color: #BB0000;
+}
+
+.etiqueta-subtitulo-color {
+	color: #BB0000;
+}

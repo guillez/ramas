@@ -1,0 +1,13 @@
+CREATE OR REPLACE FUNCTION mask.char_to_md5(IN p1 CHAR) RETURNS CHAR AS $$
+BEGIN
+ RETURN md5(p1);
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION mask.char_to_md5(IN p1 CHAR, IN len INTEGER) RETURNS CHAR AS $$
+BEGIN
+ RETURN substring ( md5(p1),  1 , len);
+END;
+$$ LANGUAGE plpgsql;
+

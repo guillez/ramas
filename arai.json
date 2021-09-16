@@ -1,0 +1,31 @@
+{
+  "name": "siu/kolla",
+  "description": "SIU-Kolla, aplicación",
+  "scripts": {
+    "hooks": "SIU\\kolla\\AraiRegistryHooks"
+  },
+  "provide": [
+    {
+      "name": "app:siu/kolla",
+      "alias": "Kolla",
+      "description": "sistema de encuestas",
+      "version": "4.3.0",
+      "icon": "./www/img/logo-kolla-iso.png"
+    }
+  ],
+  "consume": [
+    {
+      "name": "service:siu/sso-saml-idp",
+      "version": ">=0.1.0"
+    },
+    {
+      "name": "api:siu/arai-usuarios",
+      "version": ">=0.1.0",
+      "options": {
+        "toba-rest": [
+          { "proyecto": "toba_usuarios", "rest-id": "rest_arai_usuarios" }
+        ]
+      }
+    }
+  ]
+}

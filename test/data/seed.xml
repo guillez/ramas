@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE xml>
+<dataset>
+    <sge_sistema_externo sistema="1" usuario="usuario1" nombre="se_1" estado="A" />
+    <sge_sistema_externo sistema="2" usuario="usuario2" nombre="se_2" estado="A" />
+    
+    <sge_unidad_gestion unidad_gestion="0" nombre="Unidad de Gestión Predeterminada" />
+    <sge_unidad_gestion unidad_gestion="1" nombre="Unidad Prohibida" />
+    
+    <sge_concepto concepto="100" concepto_externo="100" sistema="1" descripcion="Concepto 1" unidad_gestion="0" />
+    <sge_concepto concepto="101" concepto_externo="101" sistema="2" descripcion="Concepto 2" unidad_gestion="1" />
+    <sge_concepto concepto="102" concepto_externo="102" sistema="1" descripcion="Concepto Refereciado" unidad_gestion="0" />
+    
+    <sge_tipo_elemento tipo_elemento="100" descripcion="Tipo Elemento 1" unidad_gestion="0" tipo_elemento_externo="100" sistema="1" />
+    <sge_tipo_elemento tipo_elemento="101" descripcion="Tipo Elemento 2" unidad_gestion="1" tipo_elemento_externo="101" sistema="2" />
+    <sge_tipo_elemento tipo_elemento="102" descripcion="Tipo Elemento Ref." unidad_gestion="0" tipo_elemento_externo="102" sistema="1" />
+    
+    <sge_elemento elemento="100" elemento_externo="100" sistema="1" url_img="" descripcion="Elemento 1" unidad_gestion="0"/>
+    <sge_elemento elemento="101" elemento_externo="101" sistema="2" url_img="" descripcion="Elemento 2" unidad_gestion="1"/>
+    <sge_elemento elemento="102" elemento_externo="102" sistema="1" url_img="" descripcion="Elemento Ref." unidad_gestion="0"/>
+    
+    <sge_elemento_concepto_tipo elemento_concepto="100" elemento="102" concepto="102" tipo_elemento="102" />
+    
+    <sge_habilitacion
+                    habilitacion="100"
+                    fecha_desde="2019-10-25"
+                    fecha_hasta="2029-10-25" 
+                    paginado="S" 
+                    anonima="S" 
+                    estilo="1"
+                    sistema="1"
+                    descripcion="Mi habilitacion" 
+                    texto_preliminar="Texto preliminar"
+                    generar_cod_recuperacion="S"
+                    unidad_gestion="0"
+    />
+    <sge_habilitacion
+                    habilitacion="101"
+                    fecha_desde="2019-10-25"
+                    fecha_hasta="2029-10-25" 
+                    paginado="S" 
+                    anonima="S" 
+                    estilo="1"
+                    sistema="2"
+                    descripcion="Mi habilitacion" 
+                    texto_preliminar="Texto preliminar"
+                    generar_cod_recuperacion="S"
+                    unidad_gestion="0"
+    />
+    <!-- Begin formulario Habilitado -->
+    <sge_formulario_habilitado 
+                        formulario_habilitado="101"
+                        habilitacion="100"
+						nombre= "form1"
+						concepto="102"
+						estado="A"
+                        formulario_habilitado_externo="101"
+    />
+    <sge_formulario_habilitado_detalle
+                        formulario_habilitado_detalle="101"
+                        formulario_habilitado="101"
+                        encuesta="1"
+                        elemento="102"
+                        orden="1"
+                        tipo_elemento="102"
+    />
+    <!-- End Formulario Habilitado-->
+</dataset>

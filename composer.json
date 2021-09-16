@@ -1,0 +1,46 @@
+{
+ "name": "siu/kolla",
+ "description": "Módulo de Gestión de Encuestas",
+
+ "repositories": [{
+    "type": "composer",
+    "url": "https://satis.siu.edu.ar"
+  }
+],
+
+ "require": {
+   "siu/rdi": "0.9.10",
+   "siu-toba/framework": "~3.3",
+   "tecnickcom/tcpdf": "*",
+   "components/bootstrap":"3.*",
+   "components/font-awesome":"4.7",
+    "siu/instalador":"*",
+    "siu/toba-db": "*",
+    "siu/arai-cli": "^3.0.0",
+    "siu/arai-json-migrator": "1.0.1"
+  },
+  "config": {
+       "component-dir": "www/components",
+       "component-baseurl": "/components",
+	"bin-dir": "./bin"
+  },
+ "autoload": {
+       "psr-4": {
+           "kolla\\": "",
+           "SIU\\Kolla\\": "php",
+           "ext_bootstrap\\":"php/extension_toba/bootstrap",
+           "": "src"
+       }
+   },
+   "scripts": {
+        "post-install-cmd": [
+            "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/"
+        ],
+        "post-update-cmd": [
+            "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/"
+        ]
+    },
+
+ "minimum-stability": "dev",
+ "prefer-stable": true
+}

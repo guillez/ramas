@@ -1,0 +1,76 @@
+#!/usr/bin/env php
+<?php
+
+if (!file_exists(__DIR__.'/../vendor/autoload.php')) {
+	die("Error, no se ejecuto el comando 'composer install' \n");
+}else {
+	require __DIR__.'/../vendor/autoload.php';
+}
+
+$proyectoDir = realpath(__DIR__.'/..');
+
+$configuracion = new SIU\Kolla\Instalador\Configuracion($proyectoDir);
+$factory = new \SIU\Instalador\Factory($configuracion);
+
+// acá es el punto de personalizacion de cosas de Factory
+
+$worflowInstalacion = new \SIU\Instalador\Toba\Workflow\Instalacion($factory);
+$cmdInstalar = new \SIU\Instalador\Consola\ComandoInstalar();
+$cmdInstalar->setWorkflow($worflowInstalacion);
+
+$worflowActualizacion = new \SIU\Kolla\Instalador\Workflow\ActualizacionKolla($factory);
+$cmdActualizar = new \SIU\Instalador\Consola\ComandoActualizar();
+$cmdActualizar->setWorkflow($worflowActualizacion);
+
+$worflowPermisos = new \SIU\Instalador\Toba\Workflow\Permisos($factory);
+$cmdPermisos = new \SIU\Instalador\Consola\ComandoPermisosSimple();
+$cmdPermisos->setWorkflow($worflowPermisos);
+
+$worflowMantenimiento = new \SIU\Instalador\Toba\Workflow\Mantenimiento($factory);
+$cmdMantenimiento = new \SIU\Instalador\Consola\ComandoMantenimiento();
+$cmdMantenimiento->setWorkflow($worflowMantenimiento);
+
+$worflowVerificar = new \SIU\Instalador\Toba\Workflow\Verificar($factory);
+$cmdVerificar = new \SIU\Instalador\Consola\ComandoVerificar();
+$cmdVerificar->setWorkflow($worflowVerificar);
+
+$worflowOptimizar = new \SIU\Instalador\Toba\Workflow\Optimizar($factory);
+$cmdOptimizar = new \SIU\Instalador\Consola\ComandoOptimizar();
+$cmdOptimizar->setWorkflow($worflowOptimizar);
+
+$worflowDesinstalacion = new \SIU\Instalador\Toba\Workflow\Desinstalacion($factory);
+$cmdDesinstalar = new \SIU\Instalador\Consola\ComandoDesinstalar();
+$cmdDesinstalar->setWorkflow($worflowDesinstalacion);
+
+$worflowVarsEnv = new \SIU\Instalador\Toba\Workflow\VariablesEntorno($factory);
+$cmdVarsEnv = new \SIU\Instalador\Consola\ComandoVariablesEntorno();
+$cmdVarsEnv->setWorkflow($worflowVarsEnv);
+
+$worflowCrearBasePrueba = new \SIU\Instalador\Toba\Workflow\CrearBasePrueba($factory);
+$cmdCrearBasePrueba = new \SIU\Instalador\Consola\ComandoCrearBasePrueba();
+$cmdCrearBasePrueba->setWorkflow($worflowCrearBasePrueba);
+
+$worflowExportarInstalacion = new \SIU\Instalador\Toba\Workflow\ExportarInstalacion($factory);
+$cmdExportarInstalacion = new \SIU\Instalador\Consola\ComandoExportarInstalacion();
+$cmdExportarInstalacion->setWorkflow($worflowExportarInstalacion);
+
+$worflowReconfigurar = new \SIU\Instalador\Toba\Workflow\Reconfiguracion($factory);
+$cmdReconfigurar = new \SIU\Instalador\Consola\ComandoReconfigurar();
+$cmdReconfigurar->setWorkflow($worflowReconfigurar);
+
+
+$app = new \SIU\Instalador\Consola\Aplicacion($configuracion->getProyectoNombre(), $configuracion->getProyectoVersion());
+
+$app->add($cmdInstalar);
+$app->add($cmdActualizar);
+$app->add($cmdPermisos);
+$app->add($cmdMantenimiento);
+$app->add($cmdVerificar);
+$app->add($cmdOptimizar);
+$app->add($cmdDesinstalar);
+$app->add($cmdVarsEnv);
+$app->add($cmdCrearBasePrueba);
+$app->add($cmdExportarInstalacion);
+$app->add($cmdReconfigurar);
+
+$app->run();
